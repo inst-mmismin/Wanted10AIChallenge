@@ -4,13 +4,13 @@
     // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
     "version": "0.2.0",
     "configurations": [
-        
         {
             "name": "Python 디버거: 현재 파일",
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
+
         },
         {
             "name": "3_train",
@@ -18,7 +18,7 @@
             "request": "launch",
             "program": "${workspaceFolder}${pathSeparator}3rd${pathSeparator}LiveCodes${pathSeparator}train.py",
             "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}${pathSeparator}3rd${pathSeparator}LiveCodes",
+            "cwd": "${workspaceFoxlder}${pathSeparator}3rd${pathSeparator}LiveCodes",
             "env": {
                 "CUDA_VISIBLE_DEVICES": "0"
             },
@@ -33,6 +33,34 @@
             "program": "${workspaceFolder}${pathSeparator}3rd${pathSeparator}LiveCodes${pathSeparator}infer.py",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}${pathSeparator}3rd${pathSeparator}LiveCodes",
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            },
+            "justMyCode": false,
+            "args": [
+            ]
+        },
+        {
+            "name": "make code",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}${pathSeparator}3rd${pathSeparator}LiveCodes${pathSeparator}MakeCodes.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}${pathSeparator}3rd${pathSeparator}LiveCodes",
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            },
+            "justMyCode": false,
+            "args": [
+            ]
+        },
+        {
+            "name": "error_handle",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}${pathSeparator}3rd${pathSeparator}ErrorHandle.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}${pathSeparator}3rd",
             "env": {
                 "CUDA_VISIBLE_DEVICES": "0"
             },
